@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Example</title>
+</head>
+<body>	
+<table border="1" width="30%" align="center">
+	<tr align="center">
+		<td>
+			<input type="text" name="val" id="v1">
+		</td>
+		<td>
+			<input type="text" name="val" id="v2">
+		</td>
+		<td>
+			<input type="button" name="num" value="submit" onclick="numcal()"> 
+		</td>
+		<td>
+			<p id="ans"></p>
+		</td>
+	</tr>
+</table>
+<br></br>
+<table border="1" width="30%" align="center">
+	<tr align="center">
+		<td>
+			<input type="text" name="val" id="v3">
+		</td>
+		<td>
+			<input type="text" name="val" id="v4">
+		</td> 	
+		<td>
+			<input type="text" name="val" id="v5">
+		</td>
+		<td>
+			<input type="button" name="gret" value="submit" onclick="grater()"> 
+		</td>
+		<td>
+			<p id="ans1"></p>
+		</td>
+	</tr>
+	
+</table>
+
+<script type="text/javascript">
+	function numcal(){
+		let a = document.getElementById('v1').value
+		let b = document.getElementById('v2').value
+
+	if (a>b) {
+				document.getElementById('ans').innerHTML=a
+
+	} 
+
+		else {
+				document.getElementById('ans').innerHTML=b
+		}
+
+	}
+
+	function grater(){
+		let a = parseInt(document.getElementById('v3').value)
+		let b = parseInt(document.getElementById('v4').value)
+		let c = parseInt(document.getElementById('v5').value)
+
+		if(a>b){
+			if(a>c){
+				document.getElementById('ans1').innerHTML=a
+			}
+			else{
+				document.getElementById('ans1').innerHTML=c
+			}
+
+		}	
+		else{
+			if(b>c){
+				document.getElementById('ans1').innerHTML=b
+
+			}
+			else{
+				document.getElementById('ans1').innerHTML=c
+
+			}
+
+		}
+}
+	
+	
+</script>
+</body>
+</html>
