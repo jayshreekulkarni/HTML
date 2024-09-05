@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x{
+            height: 550px;
+            width: 650px;
+            background-color: rgba(9, 234, 237, 0.929);
+            margin: auto;
+        }
+        .y{
+            height: 500px;
+            width: 600px; 
+            background-color:azure;
+            /* border: 0px solid; */
+            transform: translate(25px,25px);
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+   <div class="x">
+        <div class="y">
+            <form>
+                <table width="100%"  style="border-radius: 5px;background-color: white;">
+                    <tr>
+                        <td>
+                            <table cellpadding="5px" cellspacing="5px">
+                                <tr>
+                                    <td style="border-bottom: 3px solid chocolate;display:inline;font-size: 20px;font-weight: bolder  ;">Registration </td >
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="10px">
+                                <tr>
+                                    <td style="font-weight: bold;">Personal Details </td>
+                                </tr>
+                                <tr>
+                                    <td>Full Name</td>
+                                    <td>Father Name</td>
+                                    <td>Mother Name</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Enter your name"></td>
+                                    <td><input type="text" placeholder="Enter father name"></td>
+                                    <td><input type="text" placeholder="Enter mother name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>Aadhar No.</td>
+                                    <td>Email</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="datetime" placeholder="Enter your DOB"></td>
+                                    <td><input type="text" placeholder="Enter aadhar no" required pattern="[0-9]{12}" title="only 12 digits"></td>
+                                    <td><input type="email" placeholder="Enter your Email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile No.</td>
+                                    <td>Gender</td>
+                                    <td>Address</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Enter mobile no." required pattern="[0-9]{10}" title="only 10 digit"></td>
+                                    <td><input type="text" placeholder="Enter your gender"></td>
+                                    <td><input type="text" placeholder="Enter your address"></td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table cellspacing="5px">
+                                <tr>
+                                     <td style="font-weight: bold;">Other Details</td>
+                                 </tr>
+                                 <tr>
+                                    <td>Stream</td>
+                                    <td>Previous Class</td>
+                                    <td>Hobbies</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Enter your stream" ></td>
+                                    <td><input type="text" placeholder="Enter previous class"></td>
+                                    <td><input type="text" placeholder="Enter your hobbies"></td>
+                                </tr>
+                                <tr>
+                                    <td>Account No.</td>
+                                    <td>Religion</td>
+                                    <td>Category</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Enter account no." required pattern="[0-9]{12,15}" title="min 12 and max 15 digit only""></td>
+                                    <td><input type="text" placeholder="Enter your religion"></td>
+                                    <td><input type="text" placeholder="Enter your category"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr> 
+                    <tr>
+                    <td>
+                        <table width="100%"style="margin-left: 25%;">
+                            <tr>
+                                <td colspan="3">
+                                    <input type="button" value="Submit" style="color: white;background-color: chocolate;border-radius: 20px;width: 40%;height: 30px;">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                   </tr>
+                </table>
+            </form>
+         </div>
+   </div> 
+   
+</body>
+</html>

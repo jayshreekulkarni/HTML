@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form>
+        <table>
+            <tr>
+                <td> <input type="image" img title="icon" src="logo.png" height="100px" width="100px" ></td> 
+                 <td> <h1 style="color: red; display: inline;">Employee Registration Form</h1></td> 
+              
+            </tr>
+        <tr></tr>
+         <tr>
+        <td></td>
+        <td>
+            <input type="radio" name="prefix" value="mr" checked >Mr.
+            <input type="radio"  name="prefix">Mrs.
+            <input type="radio"  name="prefix">Ms.
+         </td>
+      </tr>
+       
+            <tr>
+                    <td widht="60%">First Name :</td>
+                    <td  widht="40%"><input type="text" placeholder="First Name" size="20" maxlength="30" required pattern="[a-zA-Z]+" title="letter only"></td>
+            </tr>
+        <tr>
+            <td>Last Name :</td>
+              <td><input type="text" placeholder="Last Name" size="20" maxlength="30"  required pattern="[a-zA-Z]+" title="letter only"> 
+            </td>
+            </tr>
+        <tr>
+             <td>Mail address1 :</td>
+             <td><input type="text" size="20" maxlength="30"> </td>
+         </tr>
+         <tr>
+               <td>  Mail address2 :</td>
+               <td><input type="text" size="20" maxlength="30"> </td>
+        </tr>
+        <tr>
+                <td>city :</td>
+                <td><input type="text" size="20" maxlength="30"></td>
+         </tr>
+         <tr>
+                <td>State :</td>
+                <td>
+                        <select>
+                        <option selected>Gujarat</option>
+                        <option>Maharashtra</option>
+                        <option>Rajsthan</option>
+                        <option>Punjab</option>
+                         </select>
+                </td>
+          
+         </tr>
+         <tr>
+                <td>Zip :</td>   
+                <td><input type="text" size="20" maxlength="30"></td>
+         </tr>
+         <tr>
+                <td> Upload Photo :</td> 
+                <td><input type="file" multiple></td>
+         </tr>
+         <tr>
+                <td> Email :</td>
+                <td><input type="email" size="20" maxlength="30"></td>
+        </tr>
+        <tr>
+            <td> Mobile :</td>
+            <td><input type="text" required pattern="[0-9]{11}" title="11 digit only" placeholder="+91" ></td>
+        </tr>
+        <tr>
+            <td>Language Known:</td>
+            <td>
+                <table>
+                    <tr>  
+                        <td> <input type="checkbox" checked>Gujarati</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked>English</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" checked>Hindi</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" >Marathi</td>
+                    </tr>
+                 </table>
+            </td>
+        </tr>
+        <tr>
+                <td>Additional Information : </td>
+                <td><textarea rows="5" cols="30" placeholder="optional"></textarea></td>
+        </tr>
+        <tr>
+             <td></td>
+            <td>
+                <input type="Submit" value="submit">
+                <input type="Reset" value="Reset">
+            </td> 
+         </tr>           
+    </table>  
+    </form>
+    </center>
+</body>
+</html>
