@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    .container
+    {
+        width: 1200px;
+        height: 600px;
+        margin: 100px auto;
+        /* background-color: lightslategray;  */
+        border: 2px solid darkgoldenrod;
+        position: relative;
+       
+
+    }
+    .left
+    {
+        width: 600px;
+        height: 600px;
+        border: 2px solid black;
+        background-color: black;
+        position: relative;
+        
+    }
+    .heading
+    {
+        width: inherit;
+        height: 50px;
+        /* border: 2px solid red;  */
+        margin: 100px 0px;
+        
+    }
+    h2
+    {
+        color: white;
+        margin-left: 350px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        
+        
+    }
+    h2::after
+    {
+        content: "";
+        width: 100%;
+        border-left: 2px solid chocolate;
+        margin: 20px;
+    }
+    .service
+    {
+        /* border: 2px solid blue; */
+        width: 600px;
+        height: 420px;
+        position: absolute;
+        top: 180px;
+        left: 0px;  
+    }
+    .ser1
+    {
+        /* border: 2px solid coral;  */
+        width: inherit;
+        height: 120px;
+    }
+    .ser1 h3
+    {
+        color: chocolate;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 0px;
+        right: 100px;
+        text-transform: uppercase;
+    }
+    .ser1 p
+    {
+        color: white;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 30px;
+        right: 80px;
+        left: 80px;
+        word-spacing: 5px;
+    }
+    .ser2
+    {
+        /* border: 2px solid coral;   */
+        width: inherit;
+        height: 120px;
+    }
+    .ser2 h3
+    {
+        color: chocolate;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 130px;
+        right: 100px;
+        text-transform: uppercase;
+    }
+    .ser2 p
+    {
+        color: white;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 160px;
+        right: 80px;
+        left: 80px;
+        word-spacing: 5px;
+    }
+    .ser3
+    {
+        /* border: 2px solid coral;  */
+        width: inherit;
+        height: 120px;
+    }
+    .ser3 h3
+    {
+        color: chocolate;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 250px;
+        right: 100px;
+        text-transform: uppercase;
+    }
+    .ser3 p
+    {
+        color: white;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 280px;
+        right: 80px;
+        left: 80px;
+        word-spacing: 5px;
+        
+    }
+    .right
+    {
+        width: 600px;
+        height: 600px;
+        /* border: 2px solid blue; */
+        background-color: lightgray;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .img
+    {
+        width: 400px;
+        height: 300px;
+        background-image: url(image1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        opacity: 1;
+        margin: 200px auto;
+    }
+    .icon
+    {
+        height: 360px;
+        width: 50px;
+        /* border: 2px solid blue; */
+        position: absolute;
+        top: 180px;
+        left: 570px;
+    }
+    .icon1
+    {
+        height: 55px;
+        width: 50px;
+        background: lightcoral;
+        border-radius: 50%;
+        position: absolute;
+        top: -20px;
+        left: 0px; 
+
+    }
+    .fa-laptop
+    {
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        size: 10px;
+        color: white;
+    }
+    .icon2
+    {
+        height: 55px;
+        width: 50px;
+        background: lightcoral;
+        border-radius: 50%;
+        position: absolute;
+        top: 110px;
+        left: 0px; 
+
+    }
+    .fa-print
+    {
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        size: 10px;
+        color: white;
+    }
+    .icon3
+    {
+        height: 55px;
+        width: 50px;
+        background: lightcoral;
+        border-radius: 50%;
+        position: absolute;
+        top: 230px;
+        left: 0px; 
+
+    }
+    .fa-camera
+    {
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        size: 10px;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="heading">
+                <h2>Our services</h2>
+            </div>
+            <div class="service">
+                <div class="ser1">
+                    <h3>Web design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta, non possimus, distinctio dolores sapiente aliquam, placeat accusantium ratione fuga aspernatur incidunt. Vel facilis magni asperiores esse distinctio! Incidunt, aspernatur?</p>
+                </div>
+                <div class="ser2">
+                    <h3>print design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta, non possimus, distinctio dolores sapiente aliquam, placeat accusantium ratione fuga aspernatur incidunt. Vel facilis magni asperiores esse distinctio! Incidunt, aspernatur?</p>
+                </div>
+                <div class="ser3">
+                    <h3>photography</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta, non possimus, distinctio dolores sapiente aliquam, placeat accusantium ratione fuga aspernatur incidunt. Vel facilis magni asperiores esse distinctio! Incidunt, aspernatur?</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="img">
+
+            </div>
+        </div>
+        <div class="icon">
+            <div class="icon1">
+                <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+            </div>  
+            <div class="icon2">
+                <i class="fa fa-print fa-2x" aria-hidden="true"></i>
+                
+            </div>  
+            <div class="icon3">
+                <i class="fa fa-camera fa-2x" aria-hidden="true"></i>
+            </div>  
+            
+              
+        </div>
+    </div>
+</body>
+</html>
