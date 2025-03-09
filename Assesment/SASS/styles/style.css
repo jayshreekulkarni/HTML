@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  background-color: black;
+  border: 2px solid black;
+}
+.main .navbar {
+  background-color: black;
+  margin-top: 30px;
+}
+.main .navbar ul {
+  background-color: #86592d;
+  padding: 10px;
+}
+.main .navbar ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 50px;
+}
+.main .navbar ul li a {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  padding: 30px;
+}
+.main .banner {
+  background-color: gray;
+}
+.main .banner .container {
+  border: 2px solid white;
+  margin: 0px 50px;
+  margin-bottom: 30px;
+}
+.main .banner .container .row {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid gray;
+  gap: 20px;
+  justify-content: space-between;
+}
+.main .banner .container .row .col {
+  width: 455px;
+  height: 400px;
+}
+.main .banner .container .row .col a {
+  color: black;
+}
+.main .banner .container .row .col a img {
+  width: 100%;
+  height: 80%;
+  border: 2px solid black;
+}
+.main .banner .container .row .col a p {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}/*# sourceMappingURL=new-style.css.map */
