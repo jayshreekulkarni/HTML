@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .digiclock
+        {
+            height: 500px;
+            width: 500px;
+            /* background-color: aqua; */
+            margin: 200px auto;
+        }
+       
+        .date
+        {
+            width: 500px;
+            padding: 30px;
+            border: 3px solid rgba(112, 165, 162, 0.901);
+            border-radius: 10px;
+            background-color: rgba(46, 228, 228, 0.901);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        .time
+        {
+            width: 500px;
+            margin-top: 100px;
+            padding: 35px;
+            border: 5px solid transparent;
+            border-image: linear-gradient(45deg, red , yellow,orange,green);
+            border-image-slice: 1;
+            border-radius: 10px;
+            background-color:black;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body onload="initClock()">
+    
+    <div class="digiclock">
+        <div class="datetime">
+                <div class="date">
+                    <span id="day">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="num">00</span>,
+                    <span id="year">Year</span>
+                  </div>
+            </div>
+            <div class="time">
+                <span id="hour" class="tm">00</span>:
+                <span id="min" class="tm">00</span>:
+                <span id="sec" class="tm">00</span>
+                <span id="period" class="tm">AM</span>
+              </div>
+        </div>
+    </div>
+<script>
+    function updateClock(){
+    var current = new Date();
+    var dname = current.getDay(),
+    mon = current.getMonth(),
+    num = current.getDate(),
+    yr = current.getFullYear(),
+    hr = current.getHours(),
+    min = current.getMinutes(),
+    sec = current.getSeconds(),
+    pr = "AM";
+
+    if(hr == 0){
+        hr = 12;
+    }
+    if (hr > 12)
+{
+    hr = hr-12;
+    pr = "PM";
+}
+    Number.prototype.pad = function(digits){
+        for(var n = this.toString(); n.length<digits; n=0+n);
+        return n;
+    }
+
+    var months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var ids = ["day", "month", "num", "year", "hour", "min", "sec", "period"];
+    var values = [weeks[dname], months[mon], num.pad(2), yr, hr.pad(2), min.pad(2), sec.pad(2), pr];
+
+    for(var i=0; i < ids.length; i++)
+        document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    
+}
+function initClock() {
+    updateClock();
+    window.setInterval("updateClock()", 1);
+}
+</script>
+</body>
+</html>
