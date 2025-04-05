@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> 
+
+   
+</head>
+<body>
+
+    
+    <p id="p1" class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure illo eos, adipisci, natus porro libero quasi a at perspiciatis delectus quae ad, optio unde est illum? Numquam, nemo. Dolores.
+    </p>
+
+    <button id="t1">Hide</button>
+    <button id="t2">Show</button>
+    <button class="t1">Hide-Show</button>
+
+
+    <script>
+
+        
+
+        $('p').click(function(){
+            $(this).hide();
+        })
+
+        $('#t1').click(function fun1(){
+            $('p').hide(2000);
+        });
+
+       
+
+       $('#t2').click(()=>{
+        $('p').show(500);
+       })
+
+
+       $('.t1').click(function(){
+        $('p').toggle(1500)
+       })
+    </script>   
+</body>
+</html>
