@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="v1">
+    <input type="text" id="v2">
+    <div class="answer" id="ans" style="border: 2px solid ; height: 20px; width: 200px; margin: 20px;"></div>
+    <button id="btn" onclick="fun()">click me</button>
+    <script>
+        var x = document.getElementById('v1')
+        var y = document.getElementById('v2')
+        var z = document.getElementById('ans')
+        btn = document.getElementById('btn')
+        
+        
+        function fun()
+        {   
+            z.innerHTML=parseInt(x.value)  +  parseInt(y.value) 
+        }
+
+       
+        
+
+    </script>
+</body>
+</html>

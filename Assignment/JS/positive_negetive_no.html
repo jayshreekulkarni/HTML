@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row
+        {
+            display: flex;
+            
+        }
+        .col
+        {
+            border: 2px solid;
+            width: 200px;
+            margin-left: 30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        input
+        {
+            width: 200px;
+            height: 20px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        button
+        {
+            margin: 10px 35px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <input type="text" id="t1">
+            <div class="col" id="ans"></div>
+            <button id="b1" onclick="test()">Click Me</button>
+        </div>
+    </div>
+    <script>
+        inp  = document.getElementById('t1');
+        res = document.getElementById('ans');
+        btn = document.getElementById('b1');
+        var x= 0;
+
+        function test()
+        {
+            if( inp.value > x )
+            res.innerHTML = "positive no"
+
+            else if( inp.value < x )
+            res.innerHTML = "negetive no"
+            
+            else
+            res.innerHTML = "zero"
+        }
+    </script>
+    
+</body>
+</html>

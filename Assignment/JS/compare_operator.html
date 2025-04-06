@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .operators,.btn 
+        {
+            margin: 100px 500px;
+        }
+        .result
+        {
+            height: 20px;
+            width: 200px;
+            border: 2px solid black;
+            margin-left:  150px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="operators">
+        <input type="text" id="val1">
+        <input type="text" id="val2">
+        
+        
+    </div>
+    <div class="btn">
+        <input type="button" value="click me" id="btn" onclick=" checkequal()">
+        <input type="button" value="grater no" id="btn" onclick=" checkgrater()">
+        <div class="result" id="res"></div>
+    </div>
+    <script>
+        var a = document.getElementById('val1')
+        var b = document.getElementById('val2')
+        var x = document.getElementById('res')
+        btn = document.getElementById('btn')
+
+       
+
+        function checkequal()
+
+        { 
+           if(a.value==b.value)
+
+            x.innerHTML= "true"
+           
+            else 
+            x.innerHTML= "false"
+        }
+        function checkgrater()
+        {
+            if(a.value>b.value)
+            x.innerHTML=a.value
+
+            else if (a.value<b.value)
+            x.innerHTML=b.value
+
+
+        }
+    </script>
+</body>
+</html>

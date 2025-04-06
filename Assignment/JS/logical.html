@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .marksheet
+        {
+            width: 500px;
+            border: 2px solid black;
+            margin: 20px auto
+        }
+        .row
+        {
+            display: flex;
+            
+        }
+        .col
+        {
+            border: 2px solid;
+            width: 200px;
+            margin-left: 30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        input
+        {
+            width: 200px;
+            height: 20px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        button
+        {
+            margin: 10px 35px;
+            width: 200px;
+        }
+        .passfail
+        {
+            display: flex;
+            position: relative;
+        }
+        .finalans
+        {
+            width: 200px;
+            height: 20px;
+            border: 2px solid ;
+            margin: 10px -5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="operators">
+       Height : <input type="text" id="val1">
+       <br>
+       Weight : <input type="text" id="val2">
+        
+        
+    </div>
+    <div class="btn">
+        <input type="button" value="click me" id="btn" onclick="test()" style="margin: 10px;">
+        <div class="result" id="res" style="height: 20px;width: 150px;border: 2px solid black;"></div>
+    </div>
+    <div class="marksheet">
+        <div class="row">
+            <div class="col" style="font-weight: bold;">Subject</div>
+            <div class="col" style="font-weight: bold;">Marks</div>
+        </div>
+        <div class="row">
+            <div class="col" id="s1">Maths</div>
+            <input type="text"  id="m1">
+        </div>
+        <div class="row">
+            <div class="col" id="s2">Science</div>
+            <input type="text" id="m2">
+        </div>
+        <div class="row">
+            <div class="col" id="s3">English</div>
+            <input type="text" id="m3">
+        </div>
+        <div class="row">
+            <div class="col" id="t1" style="font-weight: bold;">Total</div>
+            <div class="col" id="t2" style="font-weight: bold;" ></div>
+        </div>
+        <div class="passfail" >
+            <button id="btn" onclick="total()" >click me</button>
+            <div class="finalans" id="ans2">
+                
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        var a = document.getElementById('val1')
+        var b = document.getElementById('val2')
+        var x = document.getElementById('res')
+        btn = document.getElementById('btn')
+
+        p = 3
+        q = 50
+
+        sub1 = document.getElementById('s1')
+        sub2 = document.getElementById('s2')
+        sub3 = document.getElementById('s3')
+        mrk1 = document.getElementById('m1')
+        mrk2 = document.getElementById('m2')
+        mrk3 = document.getElementById('m3')
+        totl = document.getElementById('t1')
+        ans =  document.getElementById('t2')
+        btn = document.getElementById('btn')
+        ans2 = document.getElementById('ans2')
+        z = 30
+       
+        function test()
+        {
+            if(parseInt(a.value)>=p||parseInt(b.value)<=q)
+            x.innerHTML= "selected"
+
+            else 
+            x.innerHTML= "rejected"
+        }
+        function total()
+        {
+           ans.innerHTML=(parseInt(mrk1.value)+ parseInt(mrk2.value)+ parseInt(mrk3.value)) 
+           if(parseInt(mrk1.value)<z && parseInt(mrk2.value)<z && parseInt(mrk3.value)<z)
+           ans2.innerHTML = "PASS"
+            
+           else
+           ans2.innerHTML = "FAIL"
+        }
+    </script>
+</body>
+</html>

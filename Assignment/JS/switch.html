@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row
+        {
+            display: flex;
+            
+        }
+        .col
+        {
+            border: 2px solid;
+            width: 200px;
+            margin-left: 30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        input
+        {
+            width: 200px;
+            height: 20px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        button
+        {
+            margin: 10px 35px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <input type="text" id="t1" onchange="showday()">
+            <div class="col" id="ans"></div>
+            
+        </div>
+    </div>
+<script>
+     inp  = document.getElementById('t1');
+    //  day  = inp.value
+     res = document.getElementById('ans');
+    function showday()
+    {
+        switch(parseInt (inp.value))
+        { 
+            case 1: 
+            day = "Sunday";
+            break;
+
+            case 2:
+             day = "Monday";
+            break;
+
+            case 3 : 
+            day = "Tuesday";
+            break;
+
+            case 4: 
+            day = "Wednesday";
+            break;
+
+            case 5: 
+            day = "Thursday";
+            break;
+
+            case 6 : 
+            day = "Saturday";
+            break;
+
+            
+
+        }
+        res.innerHTML = "Today is" +" "+ day;
+
+    }
+    </script>
+</body>
+</html>

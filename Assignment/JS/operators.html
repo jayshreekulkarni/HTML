@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .operators,.btn 
+        {
+            margin: 100px 500px;
+        }
+        .result
+        {
+            height: 20px;
+            width: 200px;
+            border: 2px solid black;
+            margin-left:  150px;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="operators">
+        <input type="text" id="val1">
+        <input type="text" id="val2">
+       
+        
+    </div>
+    <div class="btn">
+        <input type="button" value="+" id="btn" onclick=" add()">
+        <input type="button" value="-" id="btn" onclick=" sub()">
+        <input type="button" value="*" id="btn" onclick=" multi()">
+        <input type="button" value="/" id="btn" onclick=" divi()">
+        <input type="button" value="%" id="btn" onclick=" mode()">
+        <div class="result" id="res"></div>
+    </div>
+
+    <script>
+        inp1 = document.getElementById('val1')
+        inp2 = document.getElementById('val2')
+        var x = document.getElementById('res')
+        btn = document.getElementById('btn')
+
+       
+
+        function add()
+
+        { 
+           
+            x.innerHTML=parseInt(inp1.value)+parseInt(inp2.value)
+           
+        }
+        function sub()
+
+        { 
+           
+            x.innerHTML=parseInt(inp1.value)-parseInt(inp2.value)
+           
+        }
+        function multi()
+
+        { 
+           
+            x.innerHTML=parseInt(inp1.value)*parseInt(inp2.value)
+           
+        }
+        function divi()
+
+        { 
+           
+            x.innerHTML=parseInt(inp1.value)/parseInt(inp2.value)
+           
+        }
+        function mode()
+
+        { 
+           
+            x.innerHTML=parseInt(inp1.value)%parseInt(inp2.value)
+           
+        }
+    </script>
+</body>
+</html>
