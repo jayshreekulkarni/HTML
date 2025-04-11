@@ -1,0 +1,49 @@
+@media(min-width:576px)
+{
+    .navmenu ul 
+    {
+        display: none;
+    }
+     .fa-bars
+    {
+        display: block;
+    } 
+    button
+    {
+        display: block;
+        
+    }
+   
+}
+@media(min-width:1200px)
+{
+    .navmenu ul 
+    {
+        display: block;
+    }
+     .fa-bars
+    {
+        display: none;
+    } 
+   
+}
+@media(max-width:1199px)
+{
+    .navmenu ul  
+    {
+        display: none;
+        position: absolute;
+        top: 0;
+        right:0 ;
+    }
+     .fa-bars
+    {
+        display: block;
+
+    } 
+    button
+    {
+        display: block;
+        
+    }
+}
