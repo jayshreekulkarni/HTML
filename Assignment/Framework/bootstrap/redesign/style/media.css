@@ -1,49 +1,22 @@
-@media(min-width:576px)
+@media(max-width:1200px)
 {
-    .navmenu ul 
+    .back-img
     {
-        display: none;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
     }
-     .fa-bars
+    .info-head
     {
-        display: block;
-    } 
-    button
-    {
-        display: block;
-        
+        padding-top: 100px;
     }
-   
-}
-@media(min-width:1200px)
-{
-    .navmenu ul 
+    .head_font.para
     {
-        display: block;
+        font-size: 17px;
     }
-     .fa-bars
+    .info-font
     {
-        display: none;
-    } 
-   
-}
-@media(max-width:1199px)
-{
-    .navmenu ul  
-    {
-        display: none;
-        position: absolute;
-        top: 0;
-        right:0 ;
-    }
-     .fa-bars
-    {
-        display: block;
-
-    } 
-    button
-    {
-        display: block;
-        
+        font-size: 30px;
     }
 }
